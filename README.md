@@ -24,3 +24,6 @@ To execute the analysis, from the project folder you can run
 Rscript -e "rmarkdown::render('report.Rmd')"
 ```
 This will create a file called report.html output in your directory that contains the results.
+
+# Make File
+The make file contains all three rules for make help, make install, and make report. To make the report, simply type in "make report" after navigating to the proper folder. "Make install" will install the necessary libraries. Lastly, there is a rule "make help". Type this in to get some helpful documentation regarding the make file
