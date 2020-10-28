@@ -8,7 +8,12 @@ date: `r format(Sys.Date(), '%Y-%m-%d')`"
 output: pdf_document
 ---
 
-Analysis 
+Load data into R
+```{r, loading-data, echo = FALSE}
+genes=read.table("hg18genes.txt", comment="", header=TRUE)
+```
+
+Cleaning and Analysis 
 
 ```{r, label-of-chunk, echo = FALSE}
 # basic data cleaning 
