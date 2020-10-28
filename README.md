@@ -19,11 +19,13 @@ if (!requireNamespace("BiocManager"))
 This package includes a number of core features that can be used to analyze and visualize genomic data.
 
 # Execution and Analysis
-To execute the analysis, from the project folder you can run
+To execute the analysis, from the project R folder you can run
 ```{r, execution, echo = FALSE}
 Rscript -e "rmarkdown::render('report.Rmd')"
 ```
 This will create a file called report.html output in your directory that contains the results.
+
+***** please note that the report.Rmd file is located in the R folder along with the installpackages.R file. I am attempting to keep all relevant code included in this folder *****
 
 # Make File
 The make file contains all three rules for make help, make install, and make report. To make the report, simply type in "make report" after navigating to the proper folder. "Make install" will install the necessary libraries. Lastly, there is a rule "make help". Type this in to get some helpful documentation regarding the make file
