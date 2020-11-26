@@ -38,16 +38,20 @@ To see more helpful information about the Makefile, from the project folder you 
 
 # Execution and Analysis using Docker
 Downloading the final_project.zip file in this repository and decompress it. Downloading the built Docker image from my DockerHub(mvignes/info-550) by using the command
+
 ```docker pull mvignes/info-550:firsttry```
 
 Also, you can build the docker image locally, from the project folder running
+
 ```make build```
 
 Then run the built container:
 If you download a built Docker image from DockerHub, run the built container with /final_project/ folder mounted to a local directory by using the command
+
 ```docker run -it -v ~/Desktop/final_project:/project final-proj mvignes/info550:firsttry```
 
 If you build the docker image locally, from the project folder you can run
+
 ```docker run -it -v ~/Desktop/final_project:/project```
 
 Replace the path in the code above with the path that you want to save the report on your own computer. You will then find a folder named report with the report.html in it.
